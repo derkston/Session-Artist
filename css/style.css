@@ -150,3 +150,18 @@ h1::after {
 	color: rgba(0, 113, 99, 1);
 	margin-left: 15px;
 }
+
+
+.product__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.product__card {
+	min-width: 165px;
+	height: 277px;
+}
+.product__logo {
+	width: 100%;
+	height: 100%;
+}
