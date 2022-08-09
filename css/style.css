@@ -14,3 +14,73 @@ header , footer {
 main {
 	flex-grow: 1;
 }
+
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header__items {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+.search__box {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.search {
+	width: 320px;
+	height: 45px;
+	border: 1px solid rgba(232, 232, 232, 1);
+	border-radius: 5px;
+	position: relative;
+	padding: 20px;
+
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: black;
+}
+.search__icon {
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+}
+
+.header__account button {
+	min-width: 165px;
+	height: 45px;
+	border: 1px solid rgba(0, 113, 99, 1);
+	background: white;
+	border-radius: 5px;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0em;
+}
+button.login {
+	color: rgba(0, 113, 99, 1);
+	margin-right: 15px;
+}
+button.register {
+	background: #007163;
+	color: white;
+	margin-left: 15px;
+}
