@@ -84,3 +84,69 @@ button.register {
 	color: white;
 	margin-left: 15px;
 }
+
+
+/* MAIN */ 
+section {
+	margin-top: 100px;
+}
+.section-title__items {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+h1 {
+	position: relative;
+}
+h1::before {
+	content: url(../img/bg-1.svg);
+	max-width: 201px;
+	max-height: 201px;
+	position: absolute;
+	top: -50%;
+	left : 0 ;
+}
+h1::after {
+	content: url(../img/bg-2.svg);
+	max-width: 201px;
+	max-height: 201px;
+	position: absolute;
+	top: -50%;
+	left : 25% ;
+}
+
+.section-title__buttons{
+	display: flex;
+
+}
+.section-title__buttons a {
+	width: 165px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0em;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+}
+.section-title__buttons a:first-child {
+	background: rgba(166, 124, 82, 0.1);
+	border: 1px solid #A67C52;
+	border-radius: 5px;
+	color: rgba(166, 124, 82, 1);
+	margin-right: 15px;
+}
+.section-title__buttons a:last-child {
+	background: rgba(0, 113, 99, 0.1);
+	border: 1px solid #007163;
+	border-radius: 5px;
+	color: rgba(0, 113, 99, 1);
+	margin-left: 15px;
+}
