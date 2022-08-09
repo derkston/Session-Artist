@@ -1,0 +1,45 @@
+@font-face {
+	font-family: Inter ;
+	src: url(../fonts/Inter-SemiBold.woff2);
+}
+@font-face {
+	font-family: Oswald ;
+	src: url(../fonts/Oswald-Regular.woff2);
+}
+
+
+h1 {
+	font-family: Oswald;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 80px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: black;
+}
+
+h2 {
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+h2.logo__title {
+	font-family: Oswald;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+h3 {
+	font-family: Inter;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+}
