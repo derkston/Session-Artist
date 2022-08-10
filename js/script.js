@@ -1,4 +1,29 @@
 window.addEventListener('DOMContentLoaded' , function(){
+	
+	/* BURGER MENU */
+
+	const burger = document.querySelector('.burger') ,
+				accountBox = document.querySelector('.header__account');
+
+	burger.addEventListener('click' , function(){
+		burger.classList.toggle('active')
+		accountBox.classList.toggle('active')
+		if (accountBox.classList.contains('active')){
+			document.body.style.overflow = 'hidden'
+		}else {
+			document.body.style.overflow = 'auto'
+		}
+	});
+
+
+	/* SEARCH */ 
+
+	const searchIcon = document.querySelector('.search__icon'), 
+				searchBox = document.querySelector('.search__box');
+	searchIcon.addEventListener('click' , function(){
+		searchBox.classList.toggle('active')
+	});
+
 	const regBtn = document.querySelector('.register');
 	const regPopup = document.querySelector('.reg-popup');
 	const closeRegPopup = regPopup.querySelector('.close');
