@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded' , function(){
 
 
 	/* SEARCH */ 
-	if( window.innerWidth < 577){
+	if( window.innerWidth < 578){
 		const searchIcon = document.querySelector('.search__icon'), 
 					searchBox = document.querySelector('.search__box');
 		searchIcon.addEventListener('click' , function(){
