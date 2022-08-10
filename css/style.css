@@ -34,16 +34,28 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
+	position: relative;
 }
 .logo {
 	display: flex;
 	align-items: center;
 }
+
 .search__box {
 	display: flex;
 	align-items: center;
 	position: relative;
 }
+.search__box.active {
+	position: absolute ; 
+	z-index: 2;
+	width: 90vw ; 
+	height: 50%;
+	top: calc(100% + 20px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .search {
 	width: 320px;
 	height: 45px;
@@ -60,14 +72,21 @@ main {
 	text-align: left;
 	color: black;
 }
-.search__icon {
+.search__box.active .search {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.search__icon ,  .search__box.active .search__icon{
 	position: absolute;
 	right: 20px;
 	cursor: pointer;
 }
 
+
+
 .header__account button {
-	min-width: 165px;
+	width: 165px;
 	height: 45px;
 	border: 1px solid rgba(0, 113, 99, 1);
 	background: white;
@@ -86,6 +105,44 @@ button.register {
 	background: #007163;
 	color: white;
 	margin-left: 15px;
+}
+
+
+.burger {
+	width: 20px;
+	height: 15px;
+	position: relative;
+	display: none;
+}
+.burger span {
+	width: 100%;
+	height: 2px;
+	background: #000000;
+	position: absolute;
+	left: 0%;
+}
+
+.burger span:first-child {
+	top : 0 ; 
+}
+.burger span:nth-child(2){
+	top: 50%;
+	transform: translateY(-50%);
+}
+.burger span:last-child {
+	bottom: 0%;
+}
+
+.burger.active span:first-child {
+	top : 50% ;
+	transform: rotate(-45deg); 
+}
+.burger.active span:nth-child(2){
+	display: none;
+}
+.burger.active span:last-child {
+	top: 50%;
+	transform: rotate(45deg); 
 }
 
 
@@ -158,6 +215,8 @@ h1::after {
 .product__list {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px 0px;
 	justify-content: space-between;
 }
 .product__card {
@@ -215,11 +274,14 @@ h1::after {
 }
 .footer__items {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	gap: 30px 0px;
 }
 .footer__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 50px;
 }
 .footer__link {
