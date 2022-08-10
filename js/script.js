@@ -17,12 +17,13 @@ window.addEventListener('DOMContentLoaded' , function(){
 
 
 	/* SEARCH */ 
-
-	const searchIcon = document.querySelector('.search__icon'), 
-				searchBox = document.querySelector('.search__box');
-	searchIcon.addEventListener('click' , function(){
-		searchBox.classList.toggle('active')
-	});
+	if( window.innerWidth < 577){
+		const searchIcon = document.querySelector('.search__icon'), 
+					searchBox = document.querySelector('.search__box');
+		searchIcon.addEventListener('click' , function(){
+			searchBox.classList.toggle('active')
+		});
+	}
 
 	const regBtn = document.querySelector('.register');
 	const regPopup = document.querySelector('.reg-popup');
